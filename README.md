@@ -4,15 +4,19 @@
 
 A Playwright scraper for the Books To Scrape practice website.
 
-This project collects book information from selected pages and exports the data into a CSV file.
+This project collects book data from list pages, visits each book detail page, extracts detailed book information, and exports the results into a CSV file.
 
 ## Features
 
 * User-defined page range
 * Scrape book title
 * Scrape book detail link
+* Visit each book detail page
+* Extract book price
+* Extract stock availability
+* Extract rating
+* Extract product description
 * Export results to CSV
-* Detail page analysis structure prepared
 
 ## Technologies
 
@@ -38,13 +42,21 @@ This project focuses on:
 * HTML structure analysis
 * CSS selectors
 * Attribute extraction
+* Relative URL handling
+* CSV data export
 
-## Status
+## Version History
 
-Version 1.0
+### v1.0
 
-Current progress:
+* Added page range input
+* Scraped book titles and detail links from list pages
+* Visited each book detail page
+* Extracted price, stock, rating and description
+* Exported complete book data to CSV
 
-* List page data extraction completed
-* Detail page field locating completed
-* Preparing detail page data extraction
+## Notes
+
+This is a beginner-friendly scraping project designed to practice the common commercial scraping pattern:
+
+List page → Detail page → Structured CSV output
