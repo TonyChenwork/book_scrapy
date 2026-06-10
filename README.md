@@ -44,6 +44,8 @@ This project focuses on:
 * Attribute extraction
 * Relative URL handling
 * CSV data export
+* Function-based code structure
+* Basic exception handling
 
 ## Version History
 
@@ -54,6 +56,17 @@ This project focuses on:
 * Visited each book detail page
 * Extracted price, stock, rating and description
 * Exported complete book data to CSV
+
+### v1.1
+
+* Refactored scraper into reusable functions
+* Added `get_book_links()` for list page scraping
+* Added `scrape_book_detail()` for detail page scraping
+* Added basic input validation for page range
+* Added error handling so one failed book does not stop the whole scraper
+* Improved code readability and project structure
+
+
 
 ## Notes
 
